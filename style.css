@@ -1,0 +1,114 @@
+/* General Style */
+html {
+	font-size: 100%;
+}
+body {
+	font-family: sans-serif;
+	background-color: #EEEEEE;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	text-align: center;
+	color: black;
+}
+h1 {
+	font-weight: bolder;
+}
+h2, h3 {
+	color: #3d3d3d;
+	font-weight: bold;
+	font-size: 20px;
+}
+a {
+	color: #444444;
+	text-decoration: none;
+}
+input {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border: none;
+	padding: 8px;
+	background-color: White;
+}
+select {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border: none;
+	padding: 8px;
+	background-color: White;
+}
+textarea {
+	font-family: sans-serif;
+	border: none;
+	width: 75%;
+	height: 50%;
+	resize: none;
+}
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border: none;
+	padding: 8px;
+	width: 75%;
+	background-color: White;
+}
+input[type=number] {
+	border-style: solid;
+}
+input[type=submit] {
+	font-family: sans-serif;
+	background-color: LightGray;
+	font-size: 12px;
+	width: 90px;
+    height: 40px;
+}
+input {
+	font-size: 12px;
+}
+form {
+	margin: 0px;
+}
+canvas {
+	border: solid;
+}
+
+/* Menubar Style */
+div.menubar {
+	position: absolute;
+	top: 64;
+	right: 0;
+	width: 100%;
+	height: 48px;
+	background-color: #626466;
+	text-align: center;
+}
+a.menubar {
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+a.menubar:hover {
+	background-color: #74B0ED;
+}
+
+
+
+/* Button Style */
+.button {
+	padding: 8px;
+	background-color: Gray;
+	font-size: 13px;
+}
+.button:hover {
+	background-color: #74B0ED;
+}
