@@ -8,9 +8,6 @@ $username = "finlay";
 $password = "pass";
 $dbname = "users";
 
-if(isset($_SESSION["user"])){
-	header("Location: main.php");
-}
 session_start();
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);

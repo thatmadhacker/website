@@ -8,10 +8,10 @@ $username = "finlay";
 $password = "pass";
 $dbname = "users";
 
+session_start();
 if(isset($_SESSION["user"])){
 	header("Location: main.php");
 }
-session_start();
 unset($_SESSION["user"]);
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -24,7 +24,7 @@ if (mysqli_connect_error()) {
 $user = htmlspecialchars($_POST["username"],ENT_QUOTES);
 $password = htmlspecialchars($_POST["password"],ENT_QUOTES);
 
-$result = $conn->query("SELECT `password` FROM `users` WHERE `username` = \"".$user."\"");
+$result = $conn->query("SELECT * FROM `users` WHERE `username` = \"".$user."\"");
 	$row = $result->fetch_assoc();
 	$hash = $row["password"];
 	if($password != ""){
