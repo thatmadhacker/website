@@ -6,6 +6,7 @@
 
 <style>
 
+
 .container{
 	width: 100%;
 	height: 100%;
@@ -32,9 +33,8 @@
 	height: 100%;
 	padding: 40px;
 	overflow-wrap: break-word;
-	border: 4px solid #cccccc;
+	border: 4px solid #000000;
 	border-radius: 50px;
-	background-color: #d9d9d9;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5%;
@@ -45,9 +45,8 @@
 	height: 100%;
 	padding: 40px;
 	overflow-wrap: break-word;
-	border: 4px solid #cccccc;
+	border: 4px solid #000000;
 	border-radius: 50px;
-	background-color: #d9d9d9;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5%;
@@ -57,9 +56,8 @@
 	height: 100%;
 	padding: 40px;
 	overflow-wrap: break-word;
-	border: 4px solid #cccccc;
+	border: 4px solid #000000;
 	border-radius: 50px;
-	background-color: #d9d9d9;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5%;
@@ -82,16 +80,45 @@ h1{
 	padding: 20px;
 }
 .header{
+	margin-top: 15%;
 	top: 0;
-	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 98%;
 	text-align: center;
-	background-color: #d9d9d9; 
+	border: 4px solid #000000;
+}
+a{
+	color: black;
 }
 </style>
 
+<script type="text/javascript">
+	function genColor(id){
+		var colors = ['#ff0000','#ffff00','#66ff33','#0033cc','#00ffcc'];
+		var random_color = colors[Math.floor(Math.random() * colors.length)];
+		document.getElementById(id).style.backgroundColor = random_color;
+	}
+	window.onload = function(){
+		genColor("f1");
+		genColor("f2");
+		genColor("f3");
+		genColor("f4");
+		genColor("e1");
+		genColor("e2");
+		genColor("e3");
+		genColor("e4");
+		genColor("hf");
+		genColor("he");
+		genColor("sf");
+		genColor("se");
+		genColor("body");
+	}
+</script>
+
 </head>
 
-<body>
+<body id="body">
 
 <div class="container">
 
@@ -99,11 +126,11 @@ h1{
 
 <div class="finlay">
 
-<div class="header">
+<div class="header" id="hf">
 	<h1>Finlay</h1> 
 </div>
 
-<div class="text">
+<div class="text" id="f1">
 	<h2> General Information </h2>
 	<br>
 	<p>
@@ -116,7 +143,7 @@ inside of their mini habitats.The homo-sapiens also use sophisticated
 silicone chips to do calculations that control the photons being emitted by the tungsten that is heated to 2823.15 kelvin. <br>
 	</p>
 </div>
-<div class="text">
+<div class="text" id="f2">
 	<img src="http://ontheworldmap.com/africa/africa-political-map.jpg" width="48%" height="48%">
 	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Population_curve.svg/547px-Population_curve.svg.png" width="48%" height="48%">
 	<br>
@@ -125,21 +152,22 @@ silicone chips to do calculations that control the photons being emitted by the 
 	</p>
 </div>
 
-<div class="text">
+<div class="text" id="f3">
 	<h2> Key factors causing the spread of the species </h2> <br>
 	<p>
 	Homo-sapiens spread by using their opposable thumbs to create tools to kill all of the life in a given area by completely obliterating the ecosystem and then using the materials collected from destroying the ecosystem to create shelter and wooden or ferrous shells that are used to travel across large expanses of dihydrogen-monoxide and also are able to create sophisticated shells used for fast transportation over rough terrain.
 	</p>
 </div>
 
-<div class="text">
+<div class="text" id="f4">
 	<h2> Importance of its sustainability to the ecosystem </h2> <br>
 	<p>
 	Homo-sapiens are important to the sustainability of the ecosystem because they limit the population of predators since they consume large numbers of animals and cause animals to cease exchanging carbon with the environment for sport. Homo-sapiens also put large amounts of nitrogen in to the soil.
 	</p>
 </div>
 
-<div class="sources-finlay">
+<div class="sources-finlay" id="sf">
+	<h2> Sources: </h2> <br>
 	<a href="https://www2.palomar.edu/anthro/homo2/mod_homo_4.htm">https://www2.palomar.edu/anthro/homo2/mod_homo_4.htm</a>
 	<br>
 	<a href="http://www.worldometers.info/world-population/">http://www.worldometers.info/world-population/</a>
@@ -152,37 +180,70 @@ silicone chips to do calculations that control the photons being emitted by the 
 
 <div class="eric">
 
-<div class="header">
+<div class="header" id="he">
 	<h1>Eric</h1> 
 </div>
 
-<div class="text">
-	<h2></h2><br>
+<div class="text" id="e1">
+	<h2>Species that are directly affected by the presence of this species
+</h2><br>
 	<p>
+		Homo Sapiens affect animals like moose, deer, fish, etc by hunting them down illegally  for food and for joy and this causes a decrease in population for the animal. Homo Sapiens also kill plants and trees by deforestation.
 	</p>
-</div>
-<div class="text">
-	<h2></h2> <br>
-	<p>
-	</p>
-</div>
-
-<div class="text">
-	<h2> </h2> <br>
-	<p>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Moose_superior.jpg" width="48%" height="48%">
+	<img src="https://www.hakaimagazine.com/wp-content/uploads/header-fish-formation-768x369.jpg" width="48%" height="48%">
+	<img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/9/12/1/FN_Picky-Eaters-Chicken-Nuggets_s4x3.jpg.rend.hgtvcom.826.620.suffix/1383770571120.jpeg" width="48%" height="48%">
+	<img src="https://img-aws.ehowcdn.com/877x500p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/abf99f0ce6e6472d876e85fafd72512f" width="48%" height="48%">
 	
-	</p>
-</div>
-
-<div class="text">
-	<h2> </h2> <br>
-	<p>
-	</p>
-</div>
-
-<div class="sources-eric">
 	
+</div>
+<div class="text" id="e2">
+	<h2>How does this benefit/harm homo sapiens</h2> <br>
+	<p>
+		Hunting down animals or fishing benefits us Homo Sapiens because we get more food supply. More seafood and meat will pop up in markets and people can buy it for food. Fishing harms us humans because in a few years, if we overfish we will start to run out of seafood.
+		The same could be said about hunting, if we over hunt we start to run out of meat in a few years  
+		Deforestation benefits homo sapiens because the trees from the forest that they cut down are used for construction and building materials for building houses. Deforestation doesn’t only provide shelter for homo sapiens but also to boon construction industry. Deforestation also harms humans because there will be less oxygen in the air because of the trees being cut down.
+		<br>
+		<img src="http://www.majuprojekti.lv/sites/default/files/redaktoriaus-failai/skydas%20pirminis.jpg" width="48%" height="48%">
+		<img src="https://nails.newsela.com/s3/newsela-media/article_media/2017/03/govt-tropical-deforestation-0bc61b73.jpg?crop=0%2C509%2C5760%2C3747&height=497&width=885" width="48%" height="48%">
+		<img src="https://thespinoff.co.nz/wp-content/uploads/2018/04/mad3.jpg" width="48%" height="48%">
+		<img src="http://www.goodfoodrevolution.com/wp-content/uploads/2012/08/Fish-on-the-grill-1024x768.jpg" width="48%" height="48%">
+	</p>
+</div>
+
+<div class="text" id="e3">
+	<h2>Human endeavors to correct the imbalance- how are they working</h2> <br>
+	<p>
+		In order to help correct the imbalance of deforestation, homo sapien organizations are working towards making it illegal.  “Amazon Watch works at protecting indigenous communities living in the Amazon Rainforest, while others like the Sierra Club and the World Wildlife Fund seek to protect forested areas around the world.” “The Environmental Defense Fund push for bills that give landowners financial incentives to practice land conservation.” replanting trees for those lost is another solution to helping correct the imbalance of deforestation. China is an example, in China each citizen must plant three trees per year. Because of this In 2009 5.9 million hectares of forest got added. The United States managed a net gain in forest cover as a result of reforestation. Other countries are still against reforestation.
+		In order to correct the imbalance of hunting (and fishing) there are laws as well as regulations strictly enforced regarding where you can hunt, when, what animals, how many of them, etc. You could say the same for fishing.
+	</p>
+	<img src="http://off-grid.info/blog/wp-content/uploads/2016/10/logging2.jpg" width="48%" height="48%">
+	<img src="https://53744bf91d44b81762e0-fbbc959d4e21c00b07dbe9c75f9c0b63.ssl.cf3.rackcdn.com/media/FF/FFDFC3E9-CB4E-42DE-B5D0-E4B50D489CB4/Presentation.Large/seedlings-of-tropical-trees-growing-in-a-nursery-in-brazil-south-america.jpg" width="48%" height="48%">
+</div>
+
+<div class="text" id="e4">
+	<h2>What can we (as regular citizens) do to help</h2> <br>
+	<p>
+		What can we as regular citizens can do to help? We can and we should obey the rules and regulation in place, we can respect the environment, and reduce our carbon footprint as much as possible.
+		
+	</p>
+	<img src="https://img.haikudeck.com/mg/48CCA167-B18B-4561-A40E-90C9AD2FDB7B.jpg" width="48%" height="48%">
+	<img src="https://3yx2w9xx8km2x6z9e33b5jkt-wpengine.netdna-ssl.com/wp-content/uploads/2015/02/reduce-your-carbon-footprint-logo.jpg " width="48%" height="48%">
+</div>
+
+<div class="sources-eric" id="se">
+	<h2> Sources: </h2> <br>
+	<a href="www.nhptv.org/NatureWorks/nwep16b.htm">www.nhptv.org/NatureWorks/nwep16b.htm</a>
 	<br>
+	<a href="https://sciencing.com/things-being-done-deforestation-6080.html">https://sciencing.com/things-being-done-deforestation-6080.html</a>
+	<br>
+	<a href="https://futureofworking.com/16-advantages-and-disadvantages-of-important-deforestation/">https://futureofworking.com/16-advantages-and-disadvantages-of-important-deforestation/</a>
+	<br>
+	<a href="https://sciencing.com/things-being-done-deforestation-6080.html">https://sciencing.com/things-being-done-deforestation-6080.html</a>
+	<br>
+	<a href="https://www.thecanadianencyclopedia.ca/en/article/hunting">https://www.thecanadianencyclopedia.ca/en/article/hunting</a>
+	<br>
+	
 </div>
 
 </div>
