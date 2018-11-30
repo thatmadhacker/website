@@ -1,0 +1,86 @@
+@import url("font-awesome.min.css");
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, k$
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+        }
+body{
+	list-style: none;
+}
+ol, ul{
+	list-style: none;
+}
+/* thatmadhacker green is #009933 */
+/* Logo */
+#logo {
+	margin-left: 20px;
+	display: inline-block;
+}
+#logo h1 {
+	padding: 5px;
+	background: #009933;
+	color: #fff;
+        border-radius: 6px;
+        font-family: 'Oleo Script', s$
+        font-weight: 400;
+        padding: 0.25em 0.2em 0.25em $
+        font-size: 3.25em;
+        letter-spacing: 0.05em;
+        display: inline-block;
+        vertical-align: middle;
+}
+
+#logo span {
+	font-weight: 800;
+        line-height: 4.5em;
+        letter-spacing: 0.025em;
+        font-size: 0.9em;
+        vertical-align: middle;
+        margin: 0 0 0 1.25em;
+}
+#menubar{
+	position:absolute;
+   	top:0;
+   	right:0;
+	horizontal-align: right;
+	vertical-align: middle;
+	background-color: white;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#menubar li{
+	float: left;
+	background-color: #EEEEEE;
+	text-align: center;
+	margin: 2px;
+	padding: 10px;
+}
+#menubar li a{
+	padding: 5px;
+	color: black;
+	text-decoration: none;
+}
+/* Footer */
+
+        #footer {
+		position: block;
+		float: left;
+        }
+
+        #footer a {
+                color: inherit;
+        }
+
+        #copyright {
+                color: #aaa;
+                padding: 4em 0 0 0;
+                text-align: center;
+        }
+
+        #copyright a {
+                color: inherit;
+        }
