@@ -11,38 +11,33 @@ session_start();
 unset($_SESSION["user"]);
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
-
 // Check connection
 if (mysqli_connect_error()) {
-    die("Connection failed: " . mysqli_connect_error);
+    die("Connection failed: ");
 } 
-function checkEmail($email) {
-   if ( strpos($email, '@') !== false ) {
-      $split = explode('@', $email);
-      return (strpos($split['1'], '.') !== false ? true : false);
-   }
-   else {
-      return false;
-   }
-}
-if(!checkEmail(htmlspecialchars($_POST["email"],ENT_QUOTES))){
-	die("Invalid email!");
-}
+
 $result = mysqli_query($conn,"SELECT `email` FROM `users` WHERE `email` = '".htmlspecialchars($_POST["email"],ENT_QUOTES)."'");
 if (!mysqli_num_rows($result)){
 $result = mysqli_query($conn,"SELECT `username` FROM `users` WHERE `username` = '".htmlspecialchars($_POST["username"],ENT_QUOTES)."'");
 if (!mysqli_num_rows($result)){
-$msg = "http://thatmadhacker.org/forums/verify.php?username=".htmlspecialchars($_POST["username"],ENT_QUOTES)."&email=".htmlspecialchars($_POST["email"],ENT_QUOTES)."&password=".password_hash(htmlspecialchars($_POST["password"],ENT_QUOTES)
-, PASSWORD_DEFAULT);
-$msg = wordwrap($msg,70);
-shell_exec("java -jar mailer.jar \"".htmlspecialchars($_POST["email"],ENT_QUOTES)."\" \"Verify your email for thatmadhacker.org\" \"".$msg."\"");
-echo "Check your email to verify your account!";
+
+$username = htmlspecialchars($_POST["username"],ENT_QUOTES);
+$email = htmlspecialchars($_POST["email"],ENT_QUOTES);
+$password = password_hash(htmlspecialchars($_POST["password"],ENT_QUOTES), PASSWORD_DEFAULT);
+$result = mysqli_query($conn,"SELECT * FROM users");
+$id = mysqli_num_rows($result);
+$date = date("yyyy-MM-dd");
+$query = "INSERT INTO `users` (`id`, `username`, `email`, `password`, `reg_date`) VALUES (\"".$id."\",\"".$username."\",\"".$email."\",\"".$password."\",\"".date."\")";
+$result = mysqli_query($conn,$query);
+$_SESSION["user"] = $username;
+header("Location: main.php");
 }else{
 	echo "Username ".htmlspecialchars($_POST["username"],ENT_QUOTES)." is already taken.";
 }
 }else{
 	echo "E-Mail ".htmlspecialchars($_POST["email"],ENT_QUOTES)." is already in use.";
 }
+
 mysqli_close($conn);
 ?>
 </body>
